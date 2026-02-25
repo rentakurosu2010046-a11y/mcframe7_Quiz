@@ -331,8 +331,8 @@
         //  応用編 (Advanced) - 50 Questions
         // ------------------------------------------
         const questions_advanced = [
-            { q: "constリソースのうち、「ロケール管理（言語切替）」と「パーソナライズ（個人設定）」の両方に対応しているリソースは？", o: ["layout (MCLayout)", "beans (MCBeans)", "label (MCLabel)", "format (MCFormat)"], r: "layoutは画面座標を管理し、言語による単語長の違い（ロケール）とユーザの配置変更（パーソナライズ）の両方に対応します。" },
-            { q: "constリソースのうち、「パーソナライズ」は可能だが「ロケール管理」は行わない（言語共通）リソースは？", o: ["beans (MCBeans)", "layout (MCLayout)", "label (MCLabel)", "message (MCMessage)"], r: "beansは画面部品のプロパティ等を管理し、ユーザ設定（非表示等）は保存されますが、言語ごとの定義は持ちません。" },
+            { q: "constリソースのうち、「ロケール管理（言語切替）」と「パーソナライズ（個人設定）」の両方に対応しているリソースは？", o: ["layout (MCLayout)", "format (MCFormat)", "label (MCLabel)", "format (MCFormat)"], r: "layoutは画面座標を管理し、言語による単語長の違い（ロケール）とユーザの配置変更（パーソナライズ）の両方に対応します。" },
+            { q: "constリソースのうち、「パーソナライズ」は可能だが「ロケール管理」は行わない（言語共通）リソースは？", o: ["keyassign (MCKeyAssign)", "layout (MCLayout)", "label (MCLabel)", "message (MCMessage)"], r: "beansは画面部品のプロパティ等を管理し、ユーザ設定（非表示等）は保存されますが、言語ごとの定義は持ちません。" },
             { q: "constリソースのうち、「ロケール管理」は行うが「パーソナライズ」の対象外であるリソースの組み合わせは？", o: ["label, message, format", "layout, beans, app", "menu, keyassign, plugin", "operation, ll, actype"], r: "表示名称(label)、メッセージ(message)、書式(format)は言語ごとに切り替わりますが、ユーザ個人の設定対象ではありません。" },
             { q: "画面項目の「表示名称（ラベル）」を定義し、多言語対応の基本となるリソースファイルは？", o: ["MCLabel", "MCMessage", "MCLayout", "MCBeans"], r: "MCLabelは画面上の項目名などの静的な表示文字列を言語ごとに管理します。" },
             { q: "標準機能のクラスをカスタマイズしたクラスに差し替える場合、定義を行うリソースは？", o: ["MCPlugin", "MCApp", "MCKeyAssign", "MCOperation"], r: "MCPlugin（group: plugin）は、標準機能の振る舞いを変えるために利用するクラスを指定するリソースです。" },
